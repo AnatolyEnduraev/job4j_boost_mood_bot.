@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class ReminderService {
 
     @PostConstruct
-    public void init(){
+    public void init() {
     }
 
     @PreDestroy
