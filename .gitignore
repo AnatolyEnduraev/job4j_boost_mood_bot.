@@ -11,10 +11,14 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-.idea
+# IDE / редакторы
+.idea/
 *.iml
 
-target
+target/
 
 out
+
+# Игнорируем логи и временные файлы
+logs/
 *.log
