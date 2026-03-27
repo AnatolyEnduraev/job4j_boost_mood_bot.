@@ -9,10 +9,12 @@ public class TelegramBotService {
 
     @PostConstruct
     public void init() {
+        System.out.println("[TelegramBotService] Инициализируем бота");
     }
 
     @PreDestroy
     public void destroy() {
+        System.out.println("[TelegramBotService] Завершаем работу бота");
     }
 }
 

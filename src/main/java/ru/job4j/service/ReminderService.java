@@ -9,10 +9,12 @@ public class ReminderService {
 
     @PostConstruct
     public void init() {
+        System.out.println("[RemindService] Запускаем планировщик напоминаний");
     }
 
     @PreDestroy
     public void destroy() {
+        System.out.println("[RemindService] Останавливаем планировщик");
     }
 }
 

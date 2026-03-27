@@ -9,10 +9,12 @@ public class AchievementService {
 
     @PostConstruct
     public void init() {
+        System.out.println("[AchievementService] Загружаем достижения пользователей");
     }
 
     @PreDestroy
     public void destroy() {
+        System.out.println("[AchievementService] Сохраняем состояние достижений");
     }
 }
 
