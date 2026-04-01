@@ -21,6 +21,8 @@ public class Main {
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
             var bot = ctx.getBean(TgRemoteService.class);
+            System.out.println("Register bot username: " + bot.getBotUsername());
+            System.out.println("Register bot token: " + bot.getBotToken());
             var botsApi = new TelegramBotsApi(DefaultBotSession.class);
             try {
                 botsApi.registerBot(bot);
